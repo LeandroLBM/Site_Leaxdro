@@ -3,34 +3,27 @@
     font-family: "Lexend Zetta", sans-serif;
     font-optical-sizing: auto;
 }
+body {
+    background-color: black;
+}
 
-#background1 {
-    background-attachment: flex;
-    background-image: url('20260411_183649.jpg');
+ #image1 {
+    height: 1080px;
+    width: 1920px;
     background-size: cover;
     background-position: center;
-    width: 1920px;
+    background-image: url("20260411_183649.jpg");
+}
+ #image2 {
     height: 1080px;
+    width: 1920px;
+    background-size: cover;
+    background-image: url("2026-04-11_19.16.39.png");
 }
 
-#titulo {
-    position: absolute;
-    font-size: 110px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
-#top {
-    position: absolute;
-    font-size: 20px;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
-#x {
-    font-size: 110px
+#image3 {
+    height: 1080px;
+    width: 1920px;
+    background-size: cover;
+    background-image: url("20260411_183706.jpg");
 }

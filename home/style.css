@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+}
+
+#background1 {
+    background-attachment: flex;
+    background-image: url('20260411_183649.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 1920px;
+    height: 1080px;
+}
+
+#titulo {
+    position: absolute;
+    font-size: 110px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+#top {
+    position: absolute;
+    font-size: 20px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+#x {
+    font-size: 110px
+}

@@ -27,3 +27,90 @@ body {
     background-size: cover;
     background-image: url("20260411_183706.jpg");
 }
+ #x {
+    position: absolute;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    top: 0%;
+    left: 920px;
+    border: solid, white;
+}
+#projetos {
+    position: absolute;
+    font-size: 25px;
+    color:white;
+    text-align: center;
+    top: 4%;
+    left: 450px;
+    border: solid, white;
+}
+ #galeria {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    top: 4%;
+    left: 700px;
+    border: solid, white;
+}
+#website {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    top: 4%;
+    left: 1050px;
+    border: solid, white;
+}
+#contato {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    top: 4%;
+    left: 1280px;
+    border: solid, white;
+}
+#titulo {
+    position: absolute;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    top: 40%;
+    left: 693px;
+    border: solid, white;
+}
+#conheca {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    top: 60%;
+    left: 704px;
+    border: solid, white;
+}
+#instagram {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 70%;
+    left: 923px;
+    border: solid, white;
+}
+#steam {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 70%;
+    left: 1085px;
+    border: solid, white;
+}
+#github {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 70%;
+    left: 761px;
+    border: solid, white;
+}

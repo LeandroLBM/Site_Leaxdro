@@ -3,107 +3,138 @@
     font-family: "Lexend Zetta", sans-serif;
     font-optical-sizing: auto;
 }
+
 body {
     background-color: black;
-    color:white;
+    color: white;
     font-size: 25px;
+    display: flex;
+    flex-direction: column;
 }
+
 button {
     background: none;
     color: white;
     border: none;
 }
-#image1,#image2,#image3,#image5 {
+
+#image1,
+#image2,
+#image3,
+#image5{
     height: 100vh;
     width: 100%;
     background-size: cover;
-    background-position: center;
 }
- #image1 {
+
+#image1 {
     background-image: url("FundoPcGamer.jpg");
     text-align: center;
     color: white;
 }
- #image2 {
+
+#image2 {
     background-image: url("Perfil.png");
 }
 
- #image3 {
+#image3 {
     background-image: url("FundoSetup.jpg");
 }
- #image5 {
+
+#image5 {
     background-image: url("DevGif.gif");
 }
-#projetos, #galeria,#website,#contato {
-        position: absolute;
-        font-weight: bold;
-        font-size: 25px;
+
+#projetos,
+#galeria,
+#website,
+#contato {
+    position: absolute;
+    font-weight: bold;
+    font-size: 25px;
+        transform: translateX(-50%);
 }
- #x {
+
+#x {
     position: absolute;
     font-size: 80px;
     top: 0%;
-    left: 50%;
+    left: center;
     border: solid, white;
     color: red;
     font-weight: bold;
+    transform: translateX(-50%);
 }
+
 #projetos {
     position: absolute;
     top: 4%;
-    left: 27%;
+    left: 38%;
     border: solid, white;
 }
+
 #galeria {
     position: absolute;
     top: 4%;
-    left: 39%;
+    left: 23%;
     border: solid, white;
 }
+
 #website {
     position: absolute;
     top: 4%;
-    left: 56%;
+    left: 62%;
     border: solid, white;
 }
+
 #contato {
     position: absolute;
     top: 4%;
-    left: 67%;
+    left: 77%;
     border: solid, white;
 }
+
 #titulo {
     position: absolute;
     font-size: 80px;
     top: 40%;
-    left: 38%;
+    left: 50%;
     border: solid, white;
+    transform: translateX(-50%);
 }
+
 #conheca {
     position: absolute;
     top: 65%;
-    left: 38%;
-    border: 5px, solid, white;
+    left: 50%;
     padding: 10px;
+    border: 5px, solid, white;
+    transform: translateX(-50%);
 }
+
 #instagram {
     position: absolute;
     width: 75px;
     height: 75px;
     top: 80%;
-    left: 51%;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 #steam {
     position: absolute;
     width: 75px;
     height: 75px;
     top: 80%;
-    left: 61%;
+    left: 60%;
+    transform: translateX(-50%);
 }
+
 #github {
     position: absolute;
     width: 75px;
     height: 75px;
     top: 80%;
-    left: 41%;
+    left: 40%;
+    transform: translateX(-50%);
 }

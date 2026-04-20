@@ -18,31 +18,20 @@ button {
     border: none;
 }
 
-#image1,
-#image2,
-#image3,
-#image5{
+.image1,
+.image2,
+.image3,
+.image4,
+.image5 {
     height: 100vh;
     width: 100%;
     background-size: cover;
 }
 
-#image1 {
+.image1 {
     background-image: url("FundoPcGamer.jpg");
     text-align: center;
     color: white;
-}
-
-#image2 {
-    background-image: url("Perfil.png");
-}
-
-#image3 {
-    background-image: url("FundoSetup.jpg");
-}
-
-#image5 {
-    background-image: url("DevGif.gif");
 }
 
 #projetos,
@@ -52,7 +41,7 @@ button {
     position: absolute;
     font-weight: bold;
     font-size: 25px;
-        transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 #x {
@@ -137,4 +126,86 @@ button {
     top: 80%;
     left: 40%;
     transform: translateX(-50%);
+}
+
+.image2 {
+    background-image: url("FundoEstrelado.png");
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+#foto {
+    width: 70%;
+    height: 75%;
+    border: 5px, solid, white;
+    margin-left: 3%;
+    margin-top: 6%;
+}
+
+#sobreMim {
+    width: 1500%;
+    height: 75%;
+    border: 5px, solid, white;
+    margin-top: 6%;
+    margin-right: 3%;
+}
+
+#p {
+    text-indent: 10%;
+}
+
+.image3 {
+    background-image: url("FundoSetup.jpg");
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+}
+
+#setup,
+#desktop,
+#acessorios {
+    font-size: 20px;
+    width: 33%;
+    height: 800px;
+    border: solid, white;
+    margin-top: 3%;
+}
+
+#tituloSetup {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    margin-top: 2%;
+}
+.image4 {
+    background-image: url("FundoProjetos.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+}
+#img4titulo {
+    font-size: 100px;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    margin-top: 25%;
+}
+#projeto1, #projeto2, #projeto3 {
+    width: 350px;
+    height: 200px;
+    border: 5px, solid, white;
+}
+.image5 {
+    background-image: url("DevGif.gif");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dev {
+    font-size: 100px;
+    border: 5px, solid, white;
 }

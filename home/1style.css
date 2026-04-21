@@ -18,10 +18,18 @@ body {
     display: flex;
 }
 .image1 {
-    background-image: url("FundoPcGamer.jpg");
+    background-image: url("gifSetup.gif");
     flex-direction: column;
     align-items: center;
     font-weight: bold;
+}
+button {
+    background: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
 }
 .topButtons {
     width: 100%;
@@ -59,6 +67,7 @@ body {
 .redes img {
     width: 75px;
     height: 75px;
+    cursor: pointer;
 }
 .image2 {
     background-image: url("FundoSetup.jpg");
@@ -109,15 +118,28 @@ body {
     backdrop-filter: blur(15px);
     border: solid, white;
     margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
     height: 500px;
     width: 1500px;
     padding: 10px 10px;
 }
 .image5 {
     background-image: url("DevGif.gif");
+    display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+ .webButton {
+    color: white;
+    font-size: 100px;
+}
+.finalPage {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    font-size: 13px;
+    color: aqua;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

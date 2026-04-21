@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <div class="image1">
         <div class="topButtons">
-            <button onclick="projeto()">MINECRAFT</button>
+            <button onclick="minecraft()">MINECRAFT</button>
             <button onclick="galeria()">GALERIA</button>
             <button onclick="website()">WEBSITE</button>
             <button onclick="contato()">CONTATO</button>
@@ -24,9 +25,15 @@
             <div class="conheca"><b>CONHEÇA MINHA HISTÓRIA</b></div>
         </div>
         <div class="redes">
-            <img src="steam_fundo.png" onclick="steam()">
-            <img src="instagram_fundo.png" onclick="instagram()">
-            <img src="github_fundo.png" onclick="github()">
+            <a href="https://steamcommunity.com/profiles/76561198974301441/">
+                <img src="steam_fundo.png" onclick="steam()">
+            </a>
+            <a href="https://www.instagram.com/lbm.mendes/">
+                <img src="instagram_fundo.png" onclick="instagram()">
+            </a>
+            <a href="https://github.com/LeandroLBM">
+                <img src="github_fundo.png" onclick="github()">
+            </a>
         </div>
     </div>
     <div class="image2">
@@ -100,27 +107,28 @@
         <div class="img4titulo">
             <b>MINECRAFT</b>
         </div>
-        <div class="blur">
-            <div class="descricao">
-                <p>
-                    Minecraft é um jogo onde tudo é possível, desde que você tenha criatividade e coragem para realizar
-                    suas
-                    ideias.<br><br>
-                    No botão abaixo, você encontrará uma página dedicada a mostrar meus projetos, minhas configurações
-                    de
-                    shaders, texturas e minha configuração de jogo.<br><br>
-                    Também compartilho um pouco do meu conhecimento técnico em redstone e alguns blocos utilitários
-                    importantes para diversos tipos de projetos.
-                </p>
-            </div>
+        <div class="descricao">
+            <p>
+                Minecraft é um jogo onde tudo é possível, desde que você tenha criatividade e coragem para realizar
+                suas
+                ideias.<br><br>
+                No botão abaixo, você encontrará uma página dedicada a mostrar meus projetos, minhas configurações
+                de
+                shaders, texturas, mods de perfomance e minha configuração de jogo.<br><br>
+                Também compartilho um pouco do meu conhecimento técnico em redstone e alguns blocos utilitários
+                importantes para diversos tipos de projetos.
+            </p>
         </div>
+        <button onclick="minecraft()">Clique Aqui</button>
+    </div>
     </div>
     <div class="image5">
-        <div class="dev">
-            <button onclick="website()"><b>DEV</b></button>
-        </div>
+        <button class="webButton" onclick="website()"><b>DEV</b></button>
+    </div>
+    <div class="finalPage">
+        Website desenvolvido por
+        <b>Leandro Mendes</b>
     </div>
 </body>
+
 </html>
-<script>
-</script>

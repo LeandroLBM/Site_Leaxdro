@@ -10,40 +10,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="image1">
-        <button id="projetos" onclick="projeto()">PROJETOS</button>
-        <button id="galeria" onclick="galeria()">GALERIA</button>
-        <button id="x" onclick="x()">X</button>
-        <button id="website" onclick="website()">WEBSITE</button>
-        <button id="contato" onclick="contato()">CONTATO</button>
-        <b id="titulo">LEAXDRO</b>
-        <b id="conheca">CONHEÇA MINHA HISTÓRIA</b>
-        <img src="instagram_fundo.png" id="instagram" onclick="instagram()">
-        <img src="steam_fundo.png" id="steam" onclick="steam()">
-        <img src="github_fundo.png" id="github" onclick="github()">
-    </div>
 
+    <div class="image1">
+        <div class="topButtons">
+            <button onclick="projeto()">MINECRAFT</button>
+            <button onclick="galeria()">GALERIA</button>
+            <button onclick="website()">WEBSITE</button>
+            <button onclick="contato()">CONTATO</button>
+        </div>
+        <div class="center">
+            <div class="titulo"><b>LEAXDRO</b></div>
+            <div class="conheca"><b>CONHEÇA MINHA HISTÓRIA</b></div>
+        </div>
+        <div class="redes">
+            <img src="steam_fundo.png" onclick="steam()">
+            <img src="instagram_fundo.png" onclick="instagram()">
+            <img src="github_fundo.png" onclick="github()">
+        </div>
+    </div>
     <div class="image2">
-        <img src="Foto_Perfil.png" id="foto">
-        <div id="sobreMim">
+        <img src="Foto_Perfil.png" class="foto">
+        <div class="sobreMim">
             <b>Leandro Bezerra Mendes</b><br><br>
-            <p id="p">Utilizando nickname <b>Leaxdro</b>, gosto de
+            <p>Utilizando nickname <b>Leaxdro</b>, gosto de
                 demonstrar minha paixão pela tecnologia e por videogames.
                 Sempre gostei de criar coisas únicas, que
                 impressionam logo a primeira vista.</p><br>
-            <p id="p">Cada projeto que desenvolvi tem uma historia, faz
+            <p>Cada projeto que desenvolvi tem uma historia, faz
                 parte da minha vida e sinto muito orgulho em poder
                 compartilhar isso, e até insentivar outras pessoas a
                 ter essa paixão e estilo de vida que a minha.</p>
         </div>
     </div>
-
     <div class="image3">
-        <div id="setup">
-            <b id="tituloSetup">SETUP</b><br><br>
-            <p id="lista">
+        <div class="setup">
+            <b>SETUP</b><br><br>
+            <p class="lista">
                 Monitor: AOC HERO 144hz<br>
                 Monitor: Philco 28 polegadas<br>
                 Mouse: ATK X1Pro<br>
@@ -56,10 +59,9 @@
                 Soundbar: Niye V8<br>
             </p>
         </div>
-
-        <div id="desktop">
-            <b id="tituloSetup">DESKTOP</b><br>
-            <p id="lista">
+        <div class="desktop">
+            <b>DESKTOP</b><br><br>
+            <p class="lista">
                 Processador: AMD Ryzen 5 5600x<br>
                 Placa mãe: MSI B550M MAG mortar<br>
                 Memoria Ram: Asgard 3600Mhz cl14<br>
@@ -77,9 +79,9 @@
                 Suporte GPU: Teucer Dual Pillar
             </p>
         </div>
-        <div id="acessorios">
-            <b id="tituloSetup">ACESSÓRIOS</b><br>
-            <p id="lista">
+        <div class="acessorios">
+            <b>ACESSÓRIOS</b><br><br>
+            <p class="lista">
                 Controle: 8bitDo Ultimate 2C Black Myth<br>
                 Oculos VR: Meta Quest 2 256gb<br>
                 Stream Deck: Rise Mode Vision 1<br>
@@ -95,46 +97,30 @@
         </div>
     </div>
     <div class="image4">
-        <b id="img4titulo">PROJETOS</b>
-        <div id="div_imagens">
+        <div class="img4titulo">
+            <b>MINECRAFT</b>
         </div>
-        <div class="buttons">
-            <img src="FundoSetup.jpg" onclick="projeto1()" id="projeto1">
-            <img src="FundoSetup.jpg" onclick="projeto2()" id="projeto2">
-            <img src="FundoSetup.jpg" onclick="projeto3()" id="projeto3">
+        <div class="blur">
+            <div class="descricao">
+                <p>
+                    Minecraft é um jogo onde tudo é possível, desde que você tenha criatividade e coragem para realizar
+                    suas
+                    ideias.<br><br>
+                    No botão abaixo, você encontrará uma página dedicada a mostrar meus projetos, minhas configurações
+                    de
+                    shaders, texturas e minha configuração de jogo.<br><br>
+                    Também compartilho um pouco do meu conhecimento técnico em redstone e alguns blocos utilitários
+                    importantes para diversos tipos de projetos.
+                </p>
+            </div>
         </div>
     </div>
     <div class="image5">
-        <div id="dev">
-            <button id="dev" onclick="website()"><b>DEV</b></button>
+        <div class="dev">
+            <button onclick="website()"><b>DEV</b></button>
         </div>
     </div>
 </body>
-
 </html>
 <script>
-    function projeto() {
-
-    }
-    function galeria() {
-
-    }
-    function x() {
-
-    }
-    function website() {
-
-    }
-    function contato() {
-
-    }
-    function instagram() {
-
-    }
-    function steam() {
-
-    }
-    function github() {
-
-    }
 </script>

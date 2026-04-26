@@ -27,6 +27,7 @@ button, a {
 }
 input {
     width: 400px;
+    height: 30px;
     background: none;
     border: solid white;
     color: white;
@@ -49,27 +50,42 @@ input {
     flex-direction: column;
     align-items: center;
     font-weight: bold;
+}
+.contato {
+    font-size: 100px;
+    margin-bottom: 50px;
+}
+.desc {
+    display: flex;
+    border: solid white;
+    width: 1000px;
+    height: 150px;
+    text-align: center;
+    align-items: center;
     justify-content: center;
 }
 .base1 {
-    border: solid white;
     text-align: center;
     justify-content: center;
+    align-items: center;
     width: 1000px;
-    height: 800px;
+    height: 600px;
     display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 .nome, .sobrenome, .email, .Cemail, .senha, .Csenha {
     width: 400px;
     height: 100px;
-    border: solid wheat;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.ipt1 {
+.ipt1, .ipt2, .ipt3 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 30px;
 }
 .botao {
     display: flex;
@@ -77,5 +93,15 @@ input {
     width: 150px;
     height: 50px;
     border: solid white;
+}
+.finalPage {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    font-size: 13px;
+    color: aqua;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 

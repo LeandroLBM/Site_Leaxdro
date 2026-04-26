@@ -11,7 +11,7 @@ body {
     flex-direction: column;
 }
 .image1,.image2,.image3,.image4,.image5 {
-    height: 100vh;
+    height: 1080px;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -23,7 +23,7 @@ body {
     align-items: center;
     font-weight: bold;
 }
-button {
+button, a {
     background: none;
     color: white;
     font-size: 25px;

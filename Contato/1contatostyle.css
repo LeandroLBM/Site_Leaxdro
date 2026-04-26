@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+}
+body {
+    background-color: rgb(23,22,21);
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.backgroundTop, .background1 {
+    display: flex;
+    height: 1080px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+button, a {
+    background: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+input {
+    width: 400px;
+    background: none;
+    border: solid white;
+    color: white;
+}
+.backgroundTop {
+    background-color: rgb(38,36,35);
+    width: 100%;
+    height: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.background1 {
+    background-image: url(FundoEstrelado.png);
+    height: 1040px;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+}
+.base1 {
+    border: solid white;
+    text-align: center;
+    justify-content: center;
+    width: 1000px;
+    height: 800px;
+    display: flex;
+}
+.nome, .sobrenome, .email, .Cemail, .senha, .Csenha {
+    width: 400px;
+    height: 100px;
+    border: solid wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ipt1 {
+    display: flex;
+    flex-direction: column;
+}
+.botao {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    border: solid white;
+}
+

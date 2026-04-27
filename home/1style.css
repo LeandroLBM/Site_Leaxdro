@@ -30,6 +30,7 @@ button, a {
     font-weight: bold;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 .topButtons {
     width: 100%;

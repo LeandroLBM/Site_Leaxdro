@@ -17,13 +17,21 @@ body {
     background-size: cover;
     background-position: center;
 }
-button, a {
-    background: none;
-    color: white;
+.topButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
     font-size: 15px;
+}
+.link {
+    color: white;
     font-weight: bold;
-    border: none;
-    cursor: pointer;
+    text-decoration: none;
+    width: 150px;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 input {
     width: 400px;
@@ -32,10 +40,17 @@ input {
     border: solid white;
     color: white;
 }
+button {
+    background: none;
+    border: none;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
 .backgroundTop {
     background-color: rgb(38,36,35);
     width: 100%;
-    height: 40px;
+    height: 50px;
     flex-direction: row;
     justify-content: center;
     align-items: center;

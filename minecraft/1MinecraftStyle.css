@@ -17,13 +17,28 @@ body {
     background-position: center;
     display: flex;
 }
-button, a {
-    background: none;
-    color: white;
+.backgroundTop {
+    display: flex;
+    background-color: rgb(38,36,35);
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.topButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
     font-size: 15px;
+}
+.link {
+    color: white;
     font-weight: bold;
-    border: none;
-    cursor: pointer;
+    text-decoration: none;
+    width: 150px;
+    height: 15px;
+    text-align: center;
 }
 img {
     width: 150px;
@@ -35,14 +50,6 @@ img {
     font-size: 20px;
     margin-left: 25px;
     margin-right: 25px;
-}
-.backgroundTop {
-    background-color: rgb(38,36,35);
-    width: 100%;
-    height: 50px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 .background1 {
     background-image: url(AvPaulistaMinecraft.png);
@@ -155,7 +162,7 @@ img {
     display: flex;
     height: 1080px;
     width: 100%;
-    background-color: rgb(38,36,35);
+    background-image: url("BSLImage.png");
     flex-direction: column;
     align-items: center;
 }
@@ -169,7 +176,7 @@ img {
     backdrop-filter: blur(10px);
 }
 .shaderFoto {
-    background-image: url("bslShader.webp");
+    background-image: url("BSLexemplo.png");
     background-position: center;
     background-size: cover;
     width: 900px;

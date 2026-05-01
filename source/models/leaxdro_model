@@ -1,0 +1,23 @@
+var database = require("../database/config");
+
+function buscarUsuarios(id) {
+
+  var instrucaoSql = `SELECT * FROM login WHERE cadastro_id = ${id}`;
+
+  console.log("Executando a instrução SQL: \n" + instrucaoSql);
+  return database.executar(instrucaoSql);
+}
+
+function cadastrar(id) {
+  
+  var instrucaoSql = `INSERT INTO (nome, sobrenome, email, senha) cadastro VALUES (${id})`;
+
+  console.log("Executando a instrução SQL: \n" + instrucaoSql);
+  return database.executar(instrucaoSql);
+}
+
+
+module.exports = {
+  buscarUsuarios,
+  cadastrar
+}

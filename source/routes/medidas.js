@@ -1,0 +1,14 @@
+var express = require("express");
+var router = express.Router();
+
+var medidaController = require("../controllers/medida_controller");
+
+router.get("/ultimas/:id", function (req, res) {
+    medidaController.buscarUltimasMedidas(req, res);
+});
+
+router.get("/tempo-real/:id", function (req, res) {
+    medidaController.buscarMedidasEmTempoReal(req, res);
+})
+
+module.exports = router;

@@ -34,31 +34,31 @@
             <div class="ipt1">
                 <div class="nome">
                     Nome
-                    <input type="text" id="ipt_nome">
+                    <input type="text" id="ipt_nome" placeholder="Seu Nome">
                 </div>
                 <div class="sobrenome">
                     Sobrenome
-                    <input type="text" id="ipt_sobrenome">
+                    <input type="text" id="ipt_sobrenome" placeholder="Seu Sobrenome">
                 </div>
             </div>
             <div class="ipt2">
                 <div class="email">
                     E-Mail
-                    <input type="text" id="ipt_nome">
+                    <input type="text" id="ipt_email" placeholder="SeuEmailAqui@e-mail.com">
                 </div>
                 <div class="Cemail">
                     Confirmação de e-mail
-                    <input type="text" id="ipt_sobrenome">
+                    <input type="text" id="ipt_Cemail" placeholder="ConfirmaçãoDoSeuEmailAqui@e-mail.com">
                 </div>
             </div>
             <div class="ipt3">
                 <div class="senha">
                     Senha
-                    <input type="text" id="ipt_nome">
+                    <input type="password" id="ipt_senha" placeholder="SenhaSuperSecreta🤫">
                 </div>
                 <div class="Csenha">
                     Confirmação de senha
-                    <input type="text" id="ipt_sobrenome">
+                    <input type="password" id="ipt_Csenha" placeholder="ConfirmaçãoDaSenhaSuperSecreta🤫">
                 </div>
             </div>
             <div class="botao">
@@ -74,4 +74,36 @@
 
 </html>
 <script>
+    let lista_nome = []
+    let lista_sobrenome = []
+    let lista_email = []
+    let lista_Cemail = []
+    let lista_senha = []
+    let lista_Csenha = []
+    function botao() {
+        let var_nome = ipt_nome.value;
+        let var_sobrenome = ipt_sobrenome.value;
+        let var_email = ipt_email.value;
+        let var_Cemail = ipt_Cemail.value;
+        let var_senha = ipt_senha.value;
+        let var_Csenha = ipt_Csenha.value;
+
+        if (
+            var_nome == `` ||
+            var_sobrenome == `` ||
+            var_email == `` ||
+            var_Cemail == `` ||
+            var_senha == `` ||
+            var_Csenha == ``
+        ) {
+            alert("Preencha todos os campos!");
+        } else {
+            lista_nome.push(var_nome);
+            lista_sobrenome.push(var_sobrenome);
+            lista_email.push(var_email);
+            lista_Cemail.push(var_Cemail);
+            lista_senha.push(var_senha);
+            lista_Csenha.push(var_Csenha);
+        }
+    }
 </script>

@@ -22,6 +22,9 @@
         </div>
     </div>
     <div class="background1">
+        <div class="card_erro" id="cardErro">
+            <span id="mensagem_erro"></span>
+        </div>
         <div class="cadastro">CADASTRO</div>
         <div class="desc">
             Preencha seus dados corretamente. Usaremos essas informações apenas para o seu cadastro.
@@ -64,6 +67,11 @@
             <div class="botao">
                 <button onclick="botao()">Confirmar</button>
             </div>
+            <div id="div_aguardar" class="loading">
+                <img src="../assets/icon/gif_loading.gif" id="loading-gif" />
+            </div>
+
+            <div id="div_erros_login"></div>
         </div>
     </div>
     <div class="finalPage">
@@ -74,13 +82,8 @@
 
 </html>
 <script>
-    let lista_nome = []
-    let lista_sobrenome = []
-    let lista_email = []
-    let lista_Cemail = []
-    let lista_senha = []
-    let lista_Csenha = []
     function botao() {
+        // aguardar();
         let var_nome = ipt_nome.value;
         let var_sobrenome = ipt_sobrenome.value;
         let var_email = ipt_email.value;
@@ -96,14 +99,47 @@
             var_senha == `` ||
             var_Csenha == ``
         ) {
-            alert("Preencha todos os campos!");
-        } else {
-            lista_nome.push(var_nome);
-            lista_sobrenome.push(var_sobrenome);
-            lista_email.push(var_email);
-            lista_Cemail.push(var_Cemail);
-            lista_senha.push(var_senha);
-            lista_Csenha.push(var_Csenha);
+            cardErro.style.display = "block";
+            mensagem_erro.innerHTML = `Erro! Algum campo não está preenchido corretamente!`;
+            finalizarAguardar();
+            return false;
         }
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                nomeServer: var_nome,
+                sobrenomeServer: var_sobrenome,
+                emailServer: var_email,
+                senhaServer: var_senha
+            })
+        }).then(function (resposta) {
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                cardErro.style.display = "block";
+
+                mensagem_erro.innerHTML =
+                    "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+
+                setTimeout(() => {
+                    window.location = "login.html";
+                }, "2000");
+
+                limparFormulario();
+                finalizarAguardar();
+            } else {
+                throw "Houve um erro ao tentar realizar o cadastro!";
+            }
+        })
+            .catch(function (resposta) {
+                console.log(`#ERRO: ${resposta}`);
+                finalizarAguardar();
+            });
+
+        return false;
     }
+
 </script>

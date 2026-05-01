@@ -33,23 +33,39 @@
         <div class="base1">
             <div class="email">
                 E-Mail
-                <input type="text" id="ipt_nome">
+                <input type="text" id="ipt_email" placeholder="SeuEmailAqui@E-Mail.com">
             </div>
             <div class="senha">
                 Senha
-                <input type="text" id="ipt_nome">
+                <input type="text" id="ipt_senha" placeholder="SenhaSuperSecreta🤫">
             </div>
             <div class="botao">
                 <button onclick="botao()">Confirmar</button>
             </div>
         </div>
     </div>
-        <div class="finalPage">
-            Website desenvolvido por
-            <b>Leandro Mendes</b>
-        </div>
+    <div class="finalPage">
+        Website desenvolvido por
+        <b>Leandro Mendes</b>
+    </div>
 </body>
 
 </html>
 <script>
+    let lista_email = []
+    let lista_senha = []
+    function botao() {
+        let var_email = ipt_email.value;
+        let var_senha = ipt_senha.value;
+
+        if (
+            var_email == `` ||
+            var_senha == ``
+        ) {
+            alert("Preencha todos os campos!");
+        } else {
+            lista_email.push(var_email);
+            lista_senha.push(var_senha);
+        }
+    }
 </script>

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+}
+body {
+    background-color: rgb(23,22,21);
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.backgroundTop, .background1 {
+    display: flex;
+    height: 1080px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.backgroundTop {
+    background-color: rgb(38,36,35);
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.topButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.link , .login {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    width: 150px;
+    height: 15px;
+}
+.login {
+    color: greenyellow;
+}
+input {
+    width: 400px;
+    height: 30px;
+    background: none;
+    border: solid white;
+    color: white;
+}
+button {
+    background: none;
+    border: none;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+.background1 {
+    background-image: url(../assets/img/fundo_estrelado.png);
+    height: 1040px;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+.cadastro {
+    font-size: 75px;
+    margin-bottom: 50px;
+}
+.desc {
+    display: flex;
+    border: solid white;
+    width: 1000px;
+    height: 150px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.endButton {
+    font-size: 15px;
+    margin-top: 12px;
+    color: aqua 
+}
+.base1 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.nome, .sobrenome, .email, .Cemail, .senha, .Csenha {
+    width: 400px;
+    height: 100px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ipt1, .ipt2, .ipt3 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.botao {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    border: solid white;
+}
+.finalPage {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    font-size: 13px;
+    color: aqua;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+

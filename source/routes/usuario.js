@@ -8,14 +8,6 @@ router.post("/cadastrar", function (req, res) {
     usuarioController.cadastrar(req, res);
 })
 
-router.get("/buscar", function (req, res) {
-    usuarioController.buscarPorCnpj(req, res);
-});
-
-router.get("/buscar/:id", function (req, res) {
-  usuarioController.buscarPorId(req, res);
-});
-
 router.get("/listar", function (req, res) {
   usuarioController.listar(req, res);
 });

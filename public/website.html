@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Leaxdro ✕ WebSite</title>
+
+    <script src="./js/sessao.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./css/website_style.css">
+    <link rel="icon" href="./assets/icon/website_icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="backgroundTop">
+        <div class="topButtons">
+            <a href="./index.html" class="link">INÍCIO</a>
+            <a href="./minecraft.html" class="link">MINECRAFT</a>
+            <a href="./projetos.html" class="link">PROJETOS</a>
+            <a href="./cadastro.html" class="link">CONTATO</a>
+        </div>
+    </div>
+
+    <div class="background1">
+        <div class="infoDash">
+            Essa é a média geral de todas as avaliações feitas por usuários que tiveram contato com o projeto.
+        </div>
+        <div class="dashGlobal">
+            <div class="DashGlobalGeral">
+                <div>
+                    <canvas id="avGeral"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="kpi">
+            <div class="desc">
+                Essas são avaliações básicas do projeto. Futuramente, haverá também avaliações técnicas com métricas
+                mais específicas.<br><br>
+                As notas variam de 1 a 5, sendo 1 a menor pontuação e 5 a maior.
+            </div>
+            <div class="date">
+                Total de avaliações
+                <div id="totalAvaliacoes"></div>
+            </div>
+            <div class="date">
+                Ultima Avaliação
+                <div id="dtAvaliacao"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="background2">
+        <div id="div_erros_login"></div>
+        <div id="semAvaliacoes">
+            <div class="mensagem">
+                Ei, parece que você ainda não avaliou o projeto!<br><br>
+
+                Sinta-se à vontade para avaliar. Além de ser super simples e rápido, ajuda muito a sabermos como foi o
+                andamento do projeto.
+                <img src="./assets/icon/Coração_Azul.png" id="coracao">
+                <div class="botao">
+                    <button onclick="avaliar()" id="botao">Avaliar Agora</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="notas">
+            <div class="avbase">
+                <div id="introducao">
+                    <b>Legal! Você deu o primeiro passo para avaliar o projeto.</b>
+                    A avaliação é muito simples. No total, existem 4 etapas possíveis<br><br>
+
+                    <b>Avaliação Geral</b><br>
+                    Uma visão geral e simplificada do projeto. Esta etapa é obrigatória para que sua avaliação conste em
+                    nosso Website.<br><br>
+
+                    <b>Avaliação do Website</b><br>
+                    O foco aqui é a parte técnica e a experiência de utilização do usuário.<br><br>
+
+                    <b>Avaliação da Documentação</b><br>
+                    Este projeto exigiu uma documentação extensa. Por isso, disponibilizamos este tópico para uma
+                    avaliação técnica da qualidade desse material.<br><br>
+
+                    <b>Avaliação de Recomendação</b><br>
+                    Por fim, um tópico para você dizer, com toda a sinceridade, se recomendaria este projeto para outras
+                    pessoas.
+                    <div class="comeco">
+                        Vamos Lá?
+                        <button onclick="comeco()" id="botao">Começar Avaliação</button>
+                    </div>
+                </div>
+
+                <div id="agradecimento">
+                    Agradeço pelo seu feedback.<br><br>
+
+                    Sua avaliação foi registrada com sucesso! Em alguns instantes, ela ficará visível para todos os
+                    usuários que entrarem em nosso website.
+                    <div class="continuar">
+                        Deseja continuar?
+                        <button onclick="continuar()" id="botao">Continuar Avaliação</button>
+                        <div class="card_erro" id="cardErro">
+                            <span id="mensagem_erro"></span>
+                        </div>
+                        <div id="div_aguardar">
+                            Carregando...
+                        </div>
+                    </div>
+                </div>
+
+                <div id="avaliacoes">
+                    <div id="pergunta1">
+                        <p>Qual sua nota para temática do projeto?</p>
+                    </div>
+                    <div id="pergunta2">
+                        <p>O quão úteis foram as informações do projeto?</p>
+                    </div>
+                    <div id="pergunta3">
+                        <p>O que achou do design geral do projeto?</p>
+                    </div>
+                    <div id="pergunta4">
+                        <p>Qual sua nota geral para o projeto?</p>
+                    </div>
+                    <div class="botoes">
+                        <button onclick="nota(1)" id="n1" class="buttonAv">1</button>
+                        <button onclick="nota(2)" id="n2" class="buttonAv">2</button>
+                        <button onclick="nota(3)" id="n3" class="buttonAv">3</button>
+                        <button onclick="nota(4)" id="n4" class="buttonAv">4</button>
+                        <button onclick="nota(5)" id="n5" class="buttonAv">5</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="finalPage">
+        Website desenvolvido por
+        <b>Leandro Mendes</b>
+    </div>
+</body>
+
+</html>
+<script>
+    let etapa = 1
+
+    let nota_tematica = 0
+    let nota_informacoes = 0
+    let nota_desing = 0
+    let nota_geral = 0
+    function avaliar() {
+        semAvaliacoes.style.display = "none";
+        notas.style.display = "flex";
+    }
+    function comeco() {
+        introducao.style.display = "none";
+        avaliacoes.style.display = "flex";
+        pergunta1.style.display = "block";
+    }
+    function nota(nota) {
+
+        if (etapa == 1) {
+            nota_tematica = nota;
+            pergunta1.style.display = "none";
+            pergunta2.style.display = "block";
+        }
+
+        else if (etapa == 2) {
+            nota_informacoes = nota;
+            pergunta2.style.display = "none";
+            pergunta3.style.display = "block";
+        }
+
+        else if (etapa == 3) {
+            nota_desing = nota;
+            pergunta3.style.display = "none";
+            pergunta4.style.display = "block";
+        }
+
+        else if (etapa == 4) {
+            nota_geral = nota;
+            avaliacoes.style.display = "none";
+            agradecimento.style.display = "flex";
+        }
+
+        etapa++;
+    }
+    function continuar() {
+        fetch("/metricas/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                tematicaServer: nota_tematica,
+                informacoesServer: nota_informacoes,
+                desingServer: nota_desing,
+                geralServer: nota_geral
+            }),
+        })
+            .then(function (resposta) {
+                console.log("resposta: ", resposta);
+
+                if (resposta.ok) {
+
+                    cardErro.style.display = "block";
+
+                    mensagem_erro.innerHTML =
+                        "Notas enviadas com sucesso! Em breve estarão disponíveis na nossa dashboard.";
+
+                    setTimeout(() => {
+                        window.location = "website.html";
+                    }, 2000);
+
+                } else {
+                    throw "Houve um erro ao tentar enviar as notas!";
+                }
+            })
+            .catch(function (resposta) {
+                console.log(`#ERRO: ${resposta}`);
+                finalizarAguardar();
+            });
+
+        return false;
+    }
+</script>
+<script>
+    function obterDadosGrafico() {
+
+        fetch(`/metricas/gerais`, { cache: 'no-store' })
+            .then(response => response.json())
+            .then(resposta => {
+
+                resposta.reverse();
+                plotarGrafico(resposta);
+                plotarInformacoes(resposta);
+
+
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    }
+function plotarInformacoes(resposta) {
+
+    totalAvaliacoes.innerHTML = resposta[0].avaliacoes;
+
+    dtAvaliacao.innerHTML = `${resposta[0].Data_hora}`
+}
+    function plotarGrafico(resposta) {
+
+        const dados = {
+            labels: [
+                'Temática',
+                'Informações',
+                'Design',
+                'Geral'
+            ],
+            datasets: [{
+                label: 'Média Geral das Avaliações',
+                data: [
+                    resposta[0].media_tematica,
+                    resposta[0].media_informacoes,
+                    resposta[0].media_design,
+                    resposta[0].media_geral
+                ],
+                backgroundColor: [
+                    'rgb(49, 23, 235)',
+                    'rgb(94, 58, 240)',
+                    'rgb(139, 93, 245)',
+                    'rgb(185, 129, 250)'
+                ]
+            }]
+        };
+
+        const config = {
+            type: 'bar',
+            data: dados,
+            options: {
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'rgb(255,255,255)'
+                        }
+                    },
+                },
+                scales: {
+                    x: {
+                        ticks: {
+                            color: 'rgb(255,255,255)',
+                            font: {
+                                size: 20
+                            }
+                        }
+                    },
+                    y: {
+                        min: 1,
+                        max: 5,
+                        ticks: {
+                            color: 'rgb(255,255,255)',
+                            font: {
+                                size: 20
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+        new Chart(
+            document.getElementById("avGeral"),
+            config
+        );
+    }
+    window.onload = () => {
+        obterDadosGrafico();
+    };
+</script>

@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    background-color: rgb(23, 22, 21);
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.backgroundTop,
+.background1,
+.background2 {
+    display: flex;
+    height: 1080px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.topButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 15px;
+}
+
+.link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    width: 150px;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+input {
+    width: 400px;
+    height: 30px;
+    background: none;
+    border: solid white;
+    color: white;
+}
+
+.backgroundTop {
+    background-color: rgb(38, 36, 35);
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.background1 {
+    background-color: rgb(50, 50, 50);
+    height: 1100px;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoDash {
+    display: flex;
+    text-align: center;
+    font-size: 40px;
+}
+
+#botao {
+    width: 300px;
+    border: solid white;
+    background: none;
+    color: white;
+    font-size: 17px;
+}
+
+.dashGlobal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1500px;
+    height: 700px;
+    margin-top: 100px;
+}
+
+#avGeral {
+    width: 1400px;
+    height: 700px;
+}
+
+.kpi {
+    display: flex;
+    width: 1500px;
+    height: 100px;
+    flex-direction: row;
+    font-size: 16px;
+    border: solid white;
+}
+
+.desc {
+    width: 1100px;
+    margin: 5px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    width: 400px;
+    border: solid white;
+    gap: 5px;
+}
+#totalAvaliacoes{
+font-size: 40px;
+}
+#dtAvaliacao {
+    margin-top: 25px;
+}
+.background2 {
+    background-color: rgb(23, 22, 21);
+    height: 1100px;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#semAvaliacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.mensagem {
+    border: solid white;
+    width: 700px;
+    height: 500px;
+}
+
+#coracao {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+#notas {
+    display: none;
+    border: solid white;
+    justify-content: center;
+    width: 1500px;
+    height: 800px;
+}
+
+#introducao {
+    display: block;
+}
+
+.comeco {
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    flex-direction: column;
+}
+
+#agradecimento {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.continuar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+#div_aguardar {
+    display: none;
+}
+.card_erro {
+    display: none;
+    color: white;
+    width: 1000px;
+    text-align: center;
+    font-size: 20px;
+    border: solid red;
+    padding: 10px;
+    margin-top: 100px;
+}
+#div_erros_login {
+    display: none;
+    color: red;
+}
+.resetar {
+    margin-top: 300px;
+}
+#avaliacoes {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    font-size: 30px;
+}
+#pergunta1 {
+    display: none;
+}
+
+#pergunta2 {
+    display: none;
+}
+
+#pergunta3 {
+    display: none;
+}
+
+#pergunta4 {
+    display: none;
+}
+
+.buttonAv {
+    width: 150px;
+    height: 150px;
+    font-size: 50px;
+    background: none;
+    color: white;
+    border-radius: 100%;
+    margin-top: 300px;
+}
+
+#n1 {
+    border: 10px, solid red;
+}
+
+#n2 {
+    border: 10px, solid orange;
+}
+
+#n3 {
+    border: 10px, solid yellow;
+}
+
+#n4 {
+    border: 10px, solid lightgreen;
+}
+
+#n5 {
+    border: 10px, solid green;
+}
+
+.comAvaliacoes {
+    display: block;
+}
+
+.finalPage {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    font-size: 13px;
+    color: aqua;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

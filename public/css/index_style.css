@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+}
+body {
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.image1,.image2,.image3,.image4,.image5 {
+    height: 1080px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+.image1 {
+    background-image: url("../assets/img/gif_setup.gif");
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+button, a {
+    background: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+p {
+    text-indent: 100px;
+}
+.topButtons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 1%;
+}
+.topButtons {
+    font-size: 25px;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17%;
+    gap: 20px;
+}
+.titulo {
+    font-size: 100px;
+    padding: 10px 20px;
+}
+.conheca {
+    border:5px, solid white;
+    padding: 10px 20px;
+}
+.redes {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    gap: 30%;
+    margin-bottom: 40px;
+}
+.redes img {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+.image2 {
+    background-image: url("../assets/img/fundo_setup.jpg");
+    align-items: center;
+    flex-direction: row;
+    gap: 10%;
+}
+.foto {
+    border:5px, solid white;
+    width: 500px;
+    height: 550px;
+    margin-left: 5%;
+}
+.sobreMim {
+    border:5px, solid white;
+    margin-right: 5%;
+    height: 550px;
+    padding: 10px 30px;
+    backdrop-filter: blur(10px);
+}
+.image3 {
+    background-image: url("../assets/img/fundo_estrelado.png");
+    align-items: center;
+    flex-direction: row;
+}
+.setup,.desktop,.acessorios {
+    border: solid white;
+    text-align: center;
+    height: 700px;
+    width: 750px;
+    font-size: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 10px 10px;
+}
+.lista {
+    text-align: left;
+}
+.image4 {
+    background-image: url("../assets/img/fundo_projetos.png");
+    align-items: center;
+    flex-direction: column;
+}
+.img4titulo {
+    font-size: 100px;
+}
+.descricao {
+    backdrop-filter: blur(15px);
+    border: solid, white;
+    margin-top: 50px;
+    height: 500px;
+    width: 1500px;
+    padding: 10px 10px;
+    text-indent: 100px;
+}
+.image5 {
+    background-image: url("../assets/img/gif_dev.gif");
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+ .webButton {
+    color: white;
+    font-size: 100px;
+}
+.finalPage {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    font-size: 13px;
+    color: aqua;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

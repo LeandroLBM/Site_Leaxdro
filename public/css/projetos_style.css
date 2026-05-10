@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    background-color: rgb(23, 22, 21);
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.backgroundTop,
+.background1,
+.background2 {
+    display: flex;
+    height: 1080px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.topButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 15px;
+}
+
+.link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    width: 150px;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+input {
+    width: 400px;
+    height: 30px;
+    background: none;
+    border: solid white;
+    color: white;
+}
+
+.backgroundTop {
+    background-color: rgb(38, 36, 35);
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.background1 {
+    background-image: url(../assets/img_galeria/champions_1.png);
+    height: 1080px;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.titulo {
+    font-size: 75px;
+    margin-top: 75px;
+}
+
+.desc {
+    margin-top: 10px;
+    border: solid white;
+    width: 1000px;
+    height: 400px;
+    backdrop-filter: blur(10px);
+}
+
+.background2 {
+    background-color: rgb(23, 22, 21);
+    height: 1080px;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.exemplos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    gap: 100px;
+}
+
+.ex {
+    border: solid white;
+    width: 512px;
+    height: 288px;
+    /* Resolução mínima 16:9 854x480 - dividido por 5 e multiplicado por 3x*/
+}
+
+img {
+    width: 512px;
+    height: 288px;
+}
+
+.titulo2 {
+    font-size: 75px;
+}
+
+.partes,
+.parteFinal {
+    display: flex;
+    width: 1920px;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 75px;
+}
+
+.parteFinal {
+    margin-bottom: 75px;
+}
+
+.finalPage {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    font-size: 13px;
+    color: aqua;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

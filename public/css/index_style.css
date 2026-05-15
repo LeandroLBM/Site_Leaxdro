@@ -18,7 +18,7 @@ body {
     display: flex;
 }
 .image1 {
-    background-image: url("../assets/img/gif_setup.gif");
+    background-image: url("../img/gif_setup.gif");
     flex-direction: column;
     align-items: center;
     font-weight: bold;
@@ -31,9 +31,6 @@ button, a {
     border: none;
     cursor: pointer;
     text-decoration: none;
-}
-p {
-    text-indent: 100px;
 }
 .topButtons {
     width: 100%;
@@ -74,7 +71,7 @@ p {
     cursor: pointer;
 }
 .image2 {
-    background-image: url("../assets/img/fundo_setup.jpg");
+    background-image: url("../img/fundo_setup.jpg");
     align-items: center;
     flex-direction: row;
     gap: 10%;
@@ -90,12 +87,22 @@ p {
     margin-right: 5%;
     height: 550px;
     padding: 10px 30px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
 }
 .image3 {
-    background-image: url("../assets/img/fundo_estrelado.png");
+    background-image: url("../img/fundo_estrelado.png");
     align-items: center;
+    flex-direction: column;
+}
+.descSetup {
+    margin-bottom: 50px;
+    font-size: 100px;
+    font-weight: bold;
+}
+.desc {
+    display: flex;
     flex-direction: row;
+    width: 100%;
 }
 .setup,.desktop,.acessorios {
     border: solid white;
@@ -111,7 +118,7 @@ p {
     text-align: left;
 }
 .image4 {
-    background-image: url("../assets/img/fundo_projetos.png");
+    background-image: url("../img/fundo_projetos.png");
     align-items: center;
     flex-direction: column;
 }
@@ -119,16 +126,15 @@ p {
     font-size: 100px;
 }
 .descricao {
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(50px);
     border: solid, white;
     margin-top: 50px;
     height: 500px;
     width: 1500px;
     padding: 10px 10px;
-    text-indent: 100px;
 }
 .image5 {
-    background-image: url("../assets/img/gif_dev.gif");
+    background-image: url("../img/gif_dev.gif");
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -137,6 +143,11 @@ p {
  .webButton {
     color: white;
     font-size: 100px;
+}
+.mensagem {
+    border: solid white;
+    width: 1200px;
+    text-align: center;
 }
 .finalPage {
     height: 50px;

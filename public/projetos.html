@@ -11,13 +11,16 @@
     <script src="./js/sessao.js"></script>
 
     <link rel="stylesheet" href="./css/projetos_style.css">
-    <link rel="icon" href="./assets/icon/projetos_icon.png">
+    <link rel="icon" href="./icon/projetos_icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div id="displayAbsolute">
+        <button onclick="fechar()"></button>
+    </div>
     <div class="backgroundTop">
         <div class="topButtons">
             <a href="./index.html" class="link">INÍCIO</a>
@@ -31,170 +34,164 @@
         <div class="titulo">
             PROJETOS
         </div>
-        <div class="desc">
-            Aqui você vai encontrar alguns dos meus projetos criados no Minecraft. Cada construção foi feita com
-            dedicação, sempre buscando evoluir e melhorar a cada novo projeto.
-            Todos eles foram realizados no modo sobrevivência, sem o uso de comandos ou qualquer tipo de trapaça, o que
-            torna cada conquista ainda mais desafiadora e especial.
-        </div>
     </div>
     <div class="background2">
         <div class="titulo2">Casas</div>
         <div class="partes">
-            <div class="ex">
-                <img src="./assets/img_galeria/americanos_unidos_1.png">
+            <div onclick="exibir(1)" class="ex">
+            <img id="1" src="./img_galeria/americanos_unidos_1.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/americanos_unidos_2.png">
+            <div onclick="exibir(2)" class="ex">
+            <img id="2" src="./img_galeria/americanos_unidos_2.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/americanos_unidos_3.png">
+            <div onclick="exibir(3)" class="ex">
+            <img id="3" src="./img_galeria/americanos_unidos_3.png">
             </div>
         </div>
         <div class="partes">
-            <div class="ex">
-                <img src="./assets/img_galeria/leaxdro_world_1.png">
+            <div onclick="exibir(4)" class="ex">
+            <img id="4" src="./img_galeria/leaxdro_world_1.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/leaxdro_world_2.png">
+            <div onclick="exibir(5)" class="ex">
+            <img id="5" src="./img_galeria/leaxdro_world_2.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/leaxdro_world_3.png">
+            <div onclick="exibir(6)" class="ex">
+            <img id="6" src="./img_galeria/leaxdro_world_3.png">
             </div>
         </div>
         <div class="parteFinal">
-            <div class="ex">
-                <img src="./assets/img_galeria/ilha_miku_1.png">
+            <div onclick="exibir(7)" class="ex">
+            <img id="7" src="./img_galeria/ilha_miku_1.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/ilha_miku_2.png">
+            <div onclick="exibir(8)" class="ex">
+            <img id="8" src="./img_galeria/ilha_miku_2.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/casa_rosa.png">
+            <div onclick="exibir(9)" class="ex">
+            <img id="9" src="./img_galeria/casa_rosa.png">
             </div>
         </div>
         <div class="titulo2">Projetos Especiais</div>
         <div class="partes">
-            <div class="ex">
-                <img src="./assets/img_galeria/cupla_sub_aquatica_1.png">
+            <div onclick="exibir(10)" class="ex">
+            <img id="10" src="./img_galeria/cupla_sub_aquatica_1.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/cupla_sub_aquatica_2.png">
+            <div onclick="exibir(11)" class="ex">
+            <img id="11" src="./img_galeria/cupla_sub_aquatica_2.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/cupla_sub_aquatica_3.png">
-            </div>
-        </div>
-        <div class="partes">
-            <div class="ex">
-                <img src="./assets/img_galeria/champions_1.png">
-            </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/champions_2.png">
-            </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/champions_3.png">
+            <div onclick="exibir(12)" class="ex">
+            <img id="12" src="./img_galeria/cupla_sub_aquatica_3.png">
             </div>
         </div>
         <div class="partes">
-            <div class="ex">
-                <img src="./assets/img_galeria/champions_Interno_1.png">
+            <div onclick="exibir(13)" class="ex">
+            <img id="13" src="./img_galeria/champions_1.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/champions_Interno_2.png">
+            <div onclick="exibir(14)" class="ex">
+            <img id="14" src="./img_galeria/champions_2.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/champions_Interno_1.png">
-            </div>
-        </div>
-        <div class="partes">
-            <div class="ex">
-                <img src="./assets/img_galeria/farm_de_guardian_miku_1.png">
-            </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/farm_de_guardian_miku_2.png">
-            </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/farm_de_guardian_miku_3.png">
+            <div onclick="exibir(15)" class="ex">
+            <img id="15" src="./img_galeria/champions_3.png">
             </div>
         </div>
         <div class="partes">
-            <div class="ex">
-                <img src="./assets/img_galeria/farm_de_guardian_leaxdro_1.png">
+            <div onclick="exibir(16)" class="ex">
+            <img id="16" src="./img_galeria/champions_Interno_1.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/farm_de_guardian_leaxdro_2.png">
+            <div onclick="exibir(17)" class="ex">
+            <img id="17" src="./img_galeria/champions_Interno_2.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/farm_de_guardian_leaxdro_3.png">
+            <div onclick="exibir(18)" class="ex">
+            <img id="18" src="./img_galeria/champions_Interno_1.png">
+            </div>
+        </div>
+        <div class="partes">
+            <div onclick="exibir(19)" class="ex">
+            <img id="19" src="./img_galeria/farm_de_guardian_miku_1.png">
+            </div>
+            <div onclick="exibir(20)" class="ex">
+            <img id="20" src="./img_galeria/farm_de_guardian_miku_2.png">
+            </div>
+            <div onclick="exibir(21)" class="ex">
+            <img id="21" src="./img_galeria/farm_de_guardian_miku_3.png">
+            </div>
+        </div>
+        <div class="partes">
+            <div onclick="exibir(22)" class="ex">
+            <img id="22" src="./img_galeria/farm_de_guardian_leaxdro_1.png">
+            </div>
+            <div onclick="exibir(23)" class="ex">
+            <img id="23" src="./img_galeria/farm_de_guardian_leaxdro_2.png">
+            </div>
+            <div onclick="exibir(24)" class="ex">
+            <img id="24" src="./img_galeria/farm_de_guardian_leaxdro_3.png">
             </div>
         </div>
         <div class="parteFinal">
-            <div class="ex">
-                <img src="./assets/img_galeria/farm_de_ouro.png">
+            <div onclick="exibir(25)" class="ex">
+            <img id="25" src="./img_galeria/farm_de_ouro.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/farm_mob_trap.png">
+            <div onclick="exibir(26)" class="ex">
+            <img id="26" src="./img_galeria/farm_mob_trap.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/farm_de_pedra.png">
+            <div onclick="exibir(27)" class="ex">
+            <img id="27" src="./img_galeria/farm_de_pedra.png">
             </div>
         </div>
         <div class="titulo2">Nether Hub</div>
         <div class="partes">
-            <div class="ex">
-                <img src="./assets/img_galeria/nether_hub_leaxdro_1.png">
+            <div onclick="exibir(28)" class="ex">
+            <img id="28" src="./img_galeria/nether_hub_leaxdro_1.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/nether_hub_miku_1.png">
+            <div onclick="exibir(29)" class="ex">
+            <img id="29" src="./img_galeria/nether_hub_miku_1.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/the_end.png">
+            <div onclick="exibir(30)" class="ex">
+            <img id="30" src="./img_galeria/the_end.png">
             </div>
         </div>
         <div class="parteFinal">
-            <div class="ex">
-                <img src="./assets/img_galeria/nether_hub_leaxdro_1.png">
+            <div onclick="exibir(31)" class="ex">
+            <img id="31" src="./img_galeria/nether_hub_leaxdro_1.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/nether_hub_miku_1.png">
+            <div onclick="exibir(32)" class="ex">
+            <img id="32" src="./img_galeria/nether_hub_miku_1.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/the_end.png">
+            <div onclick="exibir(33)" class="ex">
+            <img id="33" src="./img_galeria/the_end.png">
             </div>
         </div>
         <div class="titulo2">Projetos Especiais</div>
         <div class="partes">
-            <div class="ex">
-                <img src="./assets/img_galeria/leaxdro_world_4.png">
+            <div onclick="exibir(34)" class="ex">
+            <img id="34" src="./img_galeria/leaxdro_world_4.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/leaxdro_world_5.png">
+            <div onclick="exibir(35)" class="ex">
+            <img id="35" src="./img_galeria/leaxdro_world_5.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/leaxdro_world_6.png">
+            <div onclick="exibir(36)" class="ex">
+            <img id="36" src="./img_galeria/leaxdro_world_6.png">
             </div>
         </div>
         <div class="partes">
-            <div class="ex">
-                <img src="./assets/img_galeria/piramite_maia_1.png">
+            <div onclick="exibir(37)" class="ex">
+            <img id="37" src="./img_galeria/piramite_maia_1.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/piramite_maia_2.png">
+            <div onclick="exibir(38)" class="ex">
+            <img id="38" src="./img_galeria/piramite_maia_2.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/piramite_maia_3.png">
+            <div onclick="exibir(39)" class="ex">
+            <img id="39" src="./img_galeria/piramite_maia_3.png">
             </div>
         </div>
         <div class="parteFinal">
-            <div class="ex">
-                <img src="./assets/img_galeria/restauração_vila_1.png">
+            <div onclick="exibir(40)" class="ex">
+            <img id="40" src="./img_galeria/restauração_vila_1.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/restauração_vila_2.png">
+            <div onclick="exibir(41)" class="ex">
+            <img id="41" src="./img_galeria/restauração_vila_2.png">
             </div>
-            <div class="ex">
-                <img src="./assets/img_galeria/the_end.png">
+            <div onclick="exibir(42)" class="ex">
+            <img id="42" src="./img_galeria/the_end.png">
             </div>
         </div>
         <div class="finalPage">
@@ -205,4 +202,20 @@
 
 </html>
 <script>
+function exibir(id) {
+
+    let img = document.getElementById(id);
+
+    displayAbsolute.style.display = "flex";
+
+    displayAbsolute.innerHTML = `
+        <button onclick="fechar()">
+            <img id="imgButton" src="./icon/x_icon.png">
+        </button>
+        ${img.outerHTML}
+    `;
+}
+    function fechar() {
+        displayAbsolute.style.display = "none";
+    }
 </script>

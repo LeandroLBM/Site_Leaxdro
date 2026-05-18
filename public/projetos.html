@@ -1,206 +1,346 @@
-* {
-    margin: 0;
-    font-family: "Lexend Zetta", sans-serif;
-    font-optical-sizing: auto;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
 
-body {
-    background-color: rgb(23, 22, 21);
-    color: white;
-    font-size: 25px;
-    display: flex;
-    flex-direction: column;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-#displayAbsolute {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.9);
-}
+    <title>Leaxdro ✕ Projetos</title>
 
-#displayAbsolute img {
-    width: 1580px;
-    height: 920px;
-}
+    <script src="./js/sessao.js"></script>
 
-button {
-    right: 20px;
-    width: 50px;
-    cursor: pointer;
-}
+    <link rel="stylesheet" href="./css/projetos_style.css">
+    <link rel="icon" href="./icon/projetos_icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
+</head>
 
-#imgButton {
-    height: 50px;
-    width: 50px;
-}
+<body>
+    <div id="displayAbsolute">
+        <button onclick="fechar()"></button>
+    </div>
+    <div class="backgroundTop">
+        <div class="topButtons">
+            <a href="./index.html" class="link">INÍCIO</a>
+            <a href="./minecraft.html" class="link">MINECRAFT</a>
+            <a href="./website.html" class="link">WEBSITE</a>
+            <a href="./cadastro.html" class="link">CONTATO</a>
+        </div>
+    </div>
+    </div>
+    <div class="background1">
+        <div class="titulo">
+            PROJETOS
+        </div>
+    </div>
+    <div class="backgroundDesc" id="leaxdroWorld">
+        <div class="titulo2">LEAXDRO WORLD</div>
+        <div class="desc">
+            Leaxdro World é o mapa mais antigo que tenho salvo. Iniciei esse projeto em 2018 e guardo muitas boas
+            lembranças de jogar nele. No entanto, devido a problemas de desempenho, precisei deixá-lo de lado e dar
+            espaço a novos projetos. Ainda assim, até hoje consigo entrar nele e capturar essas lindas fotos que estão
+            disponíveis no projeto.
+        </div>
+    </div>
+    <div class="background2">
+        <div class="images">
+            <div class="partes">
+                <div onclick="exibir(1)" class="ex">
+                    <img id="1" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_01.png">
+                </div>
+                <div onclick="exibir(2)" class="ex">
+                    <img id="2" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_02.png">
+                </div>
+                <div onclick="exibir(3)" class="ex">
+                    <img id="3" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_03.png">
+                </div>
+            </div>
 
-.backgroundTop,
-.background1,
-.background2,
-.backgroundDesc {
-    display: flex;
-    height: 1080px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-}
+            <div class="partes">
+                <div onclick="exibir(4)" class="ex">
+                    <img id="4" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_04.png">
+                </div>
+                <div onclick="exibir(5)" class="ex">
+                    <img id="5" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_05.png">
+                </div>
+                <div onclick="exibir(6)" class="ex">
+                    <img id="6" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_06.png">
+                </div>
+            </div>
 
-.topButtons {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    font-size: 15px;
-}
+            <div class="partes">
+                <div onclick="exibir(7)" class="ex">
+                    <img id="7" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_07.png">
+                </div>
+                <div onclick="exibir(8)" class="ex">
+                    <img id="8" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_08.png">
+                </div>
+                <div onclick="exibir(9)" class="ex">
+                    <img id="9" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_09.png">
+                </div>
+            </div>
 
-.link {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    width: 150px;
-    height: 15px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+            <div class="partes">
+                <div onclick="exibir(10)" class="ex">
+                    <img id="10" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_11.png">
+                </div>
+                <div onclick="exibir(11)" class="ex">
+                    <img id="11" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_12.png">
+                </div>
+                <div onclick="exibir(12)" class="ex">
+                    <img id="12" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_13.png">
+                </div>
+            </div>
 
-input {
-    width: 400px;
-    height: 30px;
-    background: none;
-    border: solid white;
-    color: white;
-}
+            <div class="partes">
+                <div onclick="exibir(13)" class="ex">
+                    <img id="13" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_14.png">
+                </div>
+                <div onclick="exibir(14)" class="ex">
+                    <img id="14" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_15.png">
+                </div>
+                <div onclick="exibir(15)" class="ex">
+                    <img id="15" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_16.png">
+                </div>
+            </div>
 
-.backgroundTop {
-    background-color: rgb(38, 36, 35);
-    width: 100%;
-    height: 50px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+            <div class="partes">
+                <div onclick="exibir(16)" class="ex">
+                    <img id="16" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_17.png">
+                </div>
+                <div onclick="exibir(17)" class="ex">
+                    <img id="17" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_18.png">
+                </div>
+                <div onclick="exibir(18)" class="ex">
+                    <img id="18" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_19.png">
+                </div>
+            </div>
 
-.background1 {
-    background-image: url(../img_galeria/LeaxdroWorldFarm/LeaxdroWorldFarm_03.png);
-    height: 1080px;
-    width: 100%;
-    display: flex;
-    background-size: cover;
-    background-position: center;
-    flex-direction: column;
-    align-items: center;
-    font-weight: bold;
-}
+            <div class="partes">
+                <div onclick="exibir(19)" class="ex">
+                    <img id="19" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_20.png">
+                </div>
+                <div onclick="exibir(20)" class="ex">
+                    <img id="20" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_21.png">
+                </div>
+                <div onclick="exibir(21)" class="ex">
+                    <img id="21" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_22.png">
+                </div>
+            </div>
 
-.titulo2 {
-    font-size: 100px;
-    margin-top: 100px;
-}
-.desc {
-    width: 1200px;
-    height: 300px;
-    margin-top: 100px;
-    text-align: center;
-    border: solid white;
-    backdrop-filter: blur(50px);
-}
-#leaxdroWorld {
-    background-image: url(../img_galeria/LeaxdroWorld/LeaxdroWorld_01.png);
-    height: 1080px;
-    width: 100%;
-    display: flex;
-    background-size: cover;
-    background-position: center;
-    flex-direction: column;
-    align-items: center;
-    font-weight: bold;
-}
-#ilhaMiku {
-    background-image: url(../img_galeria/IlhaMiku/IlhaMiku_01.png);
-    height: 1080px;
-    width: 100%;
-    display: flex;
-    background-size: cover;
-    background-position: center;
-    flex-direction: column;
-    align-items: center;
-    font-weight: bold;
-}
-#americanosUnidos {
-    background-image: url(../img_galeria/AmericanosUnidos/AmericanosUnidos_01.png);
-    height: 1080px;
-    width: 100%;
-    display: flex;
-    background-size: cover;
-    background-position: center;
-    flex-direction: column;
-    align-items: center;
-    font-weight: bold;
-}
-.titulo {
-    font-size: 100px;
-    margin-top: 75px;
-}
+            <div class="partes">
+                <div onclick="exibir(22)" class="ex">
+                    <img id="22" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_23.png">
+                </div>
+                <div onclick="exibir(23)" class="ex">
+                    <img id="23" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_24.png">
+                </div>
+                <div onclick="exibir(24)" class="ex">
+                    <img id="24" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_25.png">
+                </div>
+            </div>
 
-.background2 {
-    background-color: rgb(23, 22, 21);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    background-size: cover;
-    background-position: center;
-    flex-direction: column;
-    align-items: center;
-    font-weight: bold;
-}
+            <div class="partes">
+                <div onclick="exibir(25)" class="ex">
+                    <img id="25" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_26.png">
+                </div>
+                <div onclick="exibir(26)" class="ex">
+                    <img id="26" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_27.png">
+                </div>
+                <div onclick="exibir(27)" class="ex">
+                    <img id="27" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_28.png">
+                </div>
+            </div>
 
-.exemplos {
-    display: flex;
-    flex-direction: row;
-    margin-top: 100px;
-    gap: 100px;
-}
+            <div class="partes">
+                <div onclick="exibir(28)" class="ex">
+                    <img id="28" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_29.png">
+                </div>
+                <div onclick="exibir(29)" class="ex">
+                    <img id="29" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_30.png">
+                </div>
+                <div onclick="exibir(30)" class="ex">
+                    <img id="30" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_31.png">
+                </div>
+            </div>
 
-.ex {
-    border: solid white;
-    width: 512px;
-    height: 288px;
-    cursor: pointer;
-    /* Resolução mínima 16:9 854x480 - dividido por 5 e multiplicado por 3x*/
-}
+            <div class="partes">
+                <div onclick="exibir(31)" class="ex">
+                    <img id="31" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_32.png">
+                </div>
+                <div onclick="exibir(32)" class="ex">
+                    <img id="32" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_33.png">
+                </div>
+                <div onclick="exibir(33)" class="ex">
+                    <img id="33" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_34.png">
+                </div>
+            </div>
 
-img {
-    width: 512px;
-    height: 288px;
-}
+            <div class="partes">
+                <div onclick="exibir(34)" class="ex">
+                    <img id="34" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_35.png">
+                </div>
+                <div onclick="exibir(35)" class="ex">
+                    <img id="35" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_36.png">
+                </div>
+                <div onclick="exibir(36)" class="ex">
+                    <img id="36" src="./img_galeria/LeaxdroWorld/LeaxdroWorld_37.png">
+                </div>
+            </div>
 
+            <div class="partes">
+                <div onclick="exibir(37)" class="ex">
+                    <img id="37" src="./img_galeria/LeaxdroWorldFarm/LeaxdroWorldFarm_01.png">
+                </div>
+                <div onclick="exibir(38)" class="ex">
+                    <img id="38" src="./img_galeria/LeaxdroWorldFarm/LeaxdroWorldFarm_02.png">
+                </div>
+                <div onclick="exibir(39)" class="ex">
+                    <img id="39" src="./img_galeria/LeaxdroWorldFarm/LeaxdroWorldFarm_03.png">
+                </div>
+            </div>
+            <div class="parteFinal">
+                <div onclick="exibir(40)" class="ex">
+                    <img id="40" src="./img_galeria/LeaxdroWorldNether/LeaxdroWorldNether_01.png">
+                </div>
+                <div onclick="exibir(41)" class="ex">
+                    <img id="41" src="./img_galeria/LeaxdroWorldNether/LeaxdroWorldNether_02.png">
+                </div>
+                <div onclick="exibir(42)" class="ex">
+                    <img id="42" src="./img_galeria/LeaxdroWorldNether/LeaxdroWorldNether_03.png">
+                </div>
+            </div>
+        </div>
+    </div>
 
-.partes,
-.parteFinal {
-    display: flex;
-    width: 1920px;
-    justify-content: center;
-    gap: 100px;
-    margin-top: 75px;
-}
+    <div class="backgroundDesc" id="ilhaMiku">
+        <div class="titulo2">ILHA MIKU</div>
+        <div class="desc">
+            A Ilha Miku é o meu mapa pessoal mais recente. Comecei esse projeto em 2024 com o objetivo de transformá-lo
+            no meu principal mapa, sem prazo para terminar.<br><br>
+            Aqui você verá imagens de construções e projetos já finalizados ou quase concluídos...</b>
+        </div>
+    </div>
+    <!--PRECISA AJUSTAR IMAGENS AQ-->
+    <div class="background2">
+        <div class="images">
+            <div class="partes">
+                <div onclick="exibir(43)" class="ex">
+                    <img id="43" src="./img_galeria/IlhaMiku/IlhaMiku_01.png">
+                </div>
+                <div onclick="exibir(44)" class="ex">
+                    <img id="44" src="./img_galeria/IlhaMiku/IlhaMiku_02.png">
+                </div>
+                <div onclick="exibir(45)" class="ex">
+                    <img id="45" src="./img_galeria/IlhaMiku/IlhaMiku_03.png">
+                </div>
+            </div>
 
-.parteFinal {
-    margin-bottom: 75px;
-}
+            <div class="partes">
+                <div onclick="exibir(46)" class="ex">
+                    <img id="46" src="./img_galeria/IlhaMiku/IlhaMiku_04.png">
+                </div>
+                <div onclick="exibir(47)" class="ex">
+                    <img id="47" src="./img_galeria/IlhaMiku/IlhaMiku_05.png">
+                </div>
+                <div onclick="exibir(48)" class="ex">
+                    <img id="48" src="./img_galeria/IlhaMiku/IlhaMiku_06.png">
+                </div>
+            </div>
 
-.finalPage {
-    height: 50px;
-    width: 100%;
-    display: flex;
-    font-size: 13px;
-    color: aqua;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
+            <div class="partes">
+                <div onclick="exibir(49)" class="ex">
+                    <img id="49" src="./img_galeria/IlhaMikuFarms/IlhaMikuFarm_01.png">
+                </div>
+                <div onclick="exibir(50)" class="ex">
+                    <img id="50" src="./img_galeria/IlhaMikuFarms/IlhaMikuFarm_02.png">
+                </div>
+                <div onclick="exibir(51)" class="ex">
+                    <img id="51" src="./img_galeria/IlhaMikuFarms/IlhaMikuFarm_03.png">
+                </div>
+            </div>
+
+            <div class="parteFinal">
+                <div onclick="exibir(52)" class="ex">
+                    <img id="52" src="./img_galeria/IlhaMikuNether/IlhaMikuNether_01.png">
+                </div>
+                <div onclick="exibir(53)" class="ex">
+                    <img id="53" src="./img_galeria/IlhaMikuNether/IlhaMikuNether_02.png">
+                </div>
+                <div onclick="exibir(54)" class="ex">
+                    <img id="54" src="./img_galeria/IlhaMikuNether/IlhaMikuNether_03.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="backgroundDesc" id="americanosUnidos">
+        <div class="titulo2">AMERICANOS UNIDOS</div>
+        <div class="desc">
+            Americanos Unidos é um mapa que foi desenvolvido entre um grupo de amigos meus ^ ^ <br><br>
+            Por ser um mapa recente, criado ainda este ano, não possui grandes construções, mas as já existentes são
+            belíssimas.<br><br>
+            Meus agradecimentos a esse mapa;<br>
+            Priska, Winn, Prince, Clovino, Taesperta
+        </div>
+    </div>
+    <div class="background2">
+        <div class="images">
+            <div class="partes">
+                <div onclick="exibir(55)" class="ex">
+                    <img id="55" src="./img_galeria/AmericanosUnidos/AmericanosUnidos_01.png">
+                </div>
+                <div onclick="exibir(56)" class="ex">
+                    <img id="56" src="./img_galeria/AmericanosUnidos/AmericanosUnidos_02.png">
+                </div>
+                <div onclick="exibir(57)" class="ex">
+                    <img id="57" src="./img_galeria/AmericanosUnidos/AmericanosUnidos_03.png">
+                </div>
+            </div>
+
+            <div class="parteFinal">
+                <div onclick="exibir(58)" class="ex">
+                    <img id="58" src="./img_galeria/AmericanosUnidos/AmericanosUnidos_04.png">
+                </div>
+                <div onclick="exibir(59)" class="ex">
+                    <img id="59" src="./img_galeria/AmericanosUnidos/AmericanosUnidos_05.png">
+                </div>
+                <div onclick="exibir(60)" class="ex">
+                    <img id="60" src="./img_galeria/AmericanosUnidos/AmericanosUnidos_05.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="finalPage">
+        Website desenvolvido por
+        <b>Leandro Mendes</b>
+    </div>
+</body>
+
+</html>
+<script>
+    function exibir(id) {
+
+        let img = document.getElementById(id);
+
+        displayAbsolute.style.display = "flex";
+        leaxdroWorld.style.display = "none";
+        ilhaMiku.style.display = "none";
+        americanosUnidos.style.display = "none";
+
+        displayAbsolute.innerHTML = `
+        <button onclick="fechar()">
+            <img id="imgButton" src="./icon/x_icon.png">
+        </button>
+        ${img.outerHTML}
+    `;
+    }
+    function fechar() {
+        displayAbsolute.style.display = "none";
+        leaxdroWorld.style.display = "flex";
+        ilhaMiku.style.display = "flex";
+        americanosUnidos.style.display = "flex";
+    }
+</script>

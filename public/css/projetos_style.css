@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 #displayAbsolute {
     position: fixed;
     top: 0;
@@ -20,24 +21,29 @@ body {
     display: none;
     justify-content: center;
     align-items: center;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0, 0, 0, 0.9);
 }
+
 #displayAbsolute img {
     width: 1580px;
     height: 920px;
 }
+
 button {
     right: 20px;
     width: 50px;
     cursor: pointer;
 }
+
 #imgButton {
     height: 50px;
     width: 50px;
 }
+
 .backgroundTop,
 .background1,
-.background2 {
+.background2,
+.backgroundDesc {
     display: flex;
     height: 1080px;
     width: 100%;
@@ -81,7 +87,7 @@ input {
 }
 
 .background1 {
-    background-image: url(../img_galeria/champions_1.png);
+    background-image: url(../img_galeria/LeaxdroWorldFarm/LeaxdroWorldFarm_03.png);
     height: 1080px;
     width: 100%;
     display: flex;
@@ -92,13 +98,59 @@ input {
     font-weight: bold;
 }
 
+.titulo2 {
+    font-size: 100px;
+    margin-top: 100px;
+}
+.desc {
+    width: 1200px;
+    height: 300px;
+    margin-top: 100px;
+    text-align: center;
+    border: solid white;
+    backdrop-filter: blur(50px);
+}
+#leaxdroWorld {
+    background-image: url(../img_galeria/LeaxdroWorld/LeaxdroWorld_01.png);
+    height: 1080px;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+#ilhaMiku {
+    background-image: url(../img_galeria/IlhaMiku/IlhaMiku_01.png);
+    height: 1080px;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+#americanosUnidos {
+    background-image: url(../img_galeria/AmericanosUnidos/AmericanosUnidos_01.png);
+    height: 1080px;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
 .titulo {
     font-size: 100px;
     margin-top: 75px;
 }
+
 .background2 {
     background-color: rgb(23, 22, 21);
-    height: 1080px;
+    height: 100%;
     width: 100%;
     display: flex;
     background-size: cover;
@@ -127,9 +179,6 @@ img {
     height: 288px;
 }
 
-.titulo2 {
-    font-size: 75px;
-}
 
 .partes,
 .parteFinal {
